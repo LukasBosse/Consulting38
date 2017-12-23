@@ -57,17 +57,41 @@
     </nav>
 
     <!-- Video Content -->
-    <div class="videoContainer">
-        <div class="well videoIntro">
-            <video class="videoController" controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="well videoChips">
-            <div style="text-align: left;">
-                <b>Author:</b> Henning Vitzke | <b>Gesehen:</b> 12 Mal | <b>Rating:</b> <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <!-- Customer Content -->
+                <div class="panel panel-primary customerContentLeft">
+                    <div class="panel-heading">Infos</div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="videoContainer">
+                    <div class="well videoIntro">
+                        <video class="videoController" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="well videoChips">
+                        <div style="text-align: left;">
+                            <b>Author:</b> Henning Vitzke | <b>Gesehen:</b> 12 Mal | <b>Rating:</b> <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <!-- Customer Content -->
+                <div class="panel panel-primary customerContentRight">
+                    <div class="panel-heading">Kontakt</div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
