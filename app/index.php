@@ -99,19 +99,24 @@
 
         <!-- Hendy Content/Sparten -->
         <div class="section">
-            <p>Test</p>
+            <p onclick="loadContent('Testfile');">Test</p>
         </div>
         <!-- Lukas Content/Kontaktform -->
-        <div class="section">
+        <div id="varContent" class="section">
             <p>Test</p>
         </div>
 
     </div>
 
     <!-- Local JavaScript -->
+
+    <!-- External JavaScript -->
     <script type="text/javascript" src="assets/js/Jquery/jquery-3.2.1.min.js"></script>
     <!--<script type="text/javascript" src="assets/js/Materialize/materialize.min.js"></script>-->
     <script type="text/javascript" src="assets/js/Bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="resources/js/PageLoader.js"></script>
 
 </body>
 </html>
