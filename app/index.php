@@ -40,13 +40,13 @@
 
     <div class="header">
 
+        <div class="headerLogo">
+            <img class="logo" src="resources/images/logo.png">
+        </div>
 
-        <nav class="navbar navbar-inverse menu">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">FinanzFreunde38</a>
-                </div>
-                <ul class="nav navbar-nav">
+        <nav class="navbar navbar-default menu">
+
+                <ul class="nav navbar-nav navbarHeader">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Branche</a></li>
                     <li><a href="#">Team</a></li>
@@ -54,12 +54,12 @@
                     <li><a href="#">Kontakt</a></li>
                     <li><a href="#">Impressum</a></li>
                 </ul>
-            </div>
+
         </nav>
 
     </div>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 80vh;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 75vh;">
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
