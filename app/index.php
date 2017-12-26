@@ -40,10 +40,12 @@
 
     <div class="header">
 
+        <!-- Logo -->
         <div class="headerLogo">
             <img class="logo" src="resources/images/logo.png">
         </div>
 
+        <!-- Navbar -->
         <nav class="navbar navbar-default menu">
 
                 <ul class="nav navbar-nav navbarHeader">
@@ -59,6 +61,7 @@
 
     </div>
 
+    <!-- Image/Video -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 75vh;">
 
         <!-- Indicators -->
@@ -94,8 +97,16 @@
         </a>
     </div>
 
-    </div>
+        <!-- Hendy Content/Sparten -->
+        <div class="section">
+            <p>Test</p>
+        </div>
+        <!-- Lukas Content/Kontaktform -->
+        <div class="section">
+            <p>Test</p>
+        </div>
 
+    </div>
 
     <!-- Local JavaScript -->
     <script type="text/javascript" src="assets/js/Jquery/jquery-3.2.1.min.js"></script>
