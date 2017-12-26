@@ -77,3 +77,13 @@ body {
     color: white !important;
     text-decoration: none;
 }
+
+table, th, td {
+    border-spacing: 5px;
+
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}

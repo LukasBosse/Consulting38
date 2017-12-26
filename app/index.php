@@ -99,7 +99,20 @@
 
         <!-- Hendy Content/Sparten -->
         <div class="section">
-            <p onclick="loadContent('Testfile');">Test</p>
+            <table>
+                <tr>
+                    <td><img src="assets/images/1.jpg" onclick="loadContent('Testfile')" alt="Angestellter" style="width:500px;height: 400px;px;"><p>Angestellter</p></td>
+                    <td><img src="assets/images/2.jpg" alt="Selbstständiger" style="width:500px;height:400px;"><p>Selbstständiger</p></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/3.jpg" alt="Unternehmer" style="width:500px;height:400px;"><p>Unternehmer</p></td>
+                    <td><img src="assets/images/4.jpg" alt="Investor" style="width:500px;height:400px;"><p>Investor</p></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/5.jpg" alt="Student" style="width:500px;height:400px;"><p>Student</p></td>
+                    <td><img src="assets/images/6.jpg" alt="Auszubildender" style="width:500px;height:400px;"><p>Auszubildender</p></td>
+                </tr>
+            </table>
         </div>
         <!-- Lukas Content/Kontaktform -->
         <div id="varContent" class="section">
