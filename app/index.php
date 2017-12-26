@@ -38,15 +38,28 @@
 
     <div class="pageContent">
 
-        <div class=""></div>
+    <div class="header">
 
-    <!-- Navbar -->
 
-    <div class="burger">
-        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        <nav class="navbar navbar-inverse menu">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">FinanzFreunde38</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Branche</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
+
     </div>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 100vh;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 80vh;">
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
