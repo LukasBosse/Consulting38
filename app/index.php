@@ -26,9 +26,9 @@
     <!-- Local Stylesheets -->
 
     <!-- External Stylesheets -->
-    <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialIcons.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialIcons.css">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Custom Stylesheets -->
     <link type="text/css" href="resources/css/main.css" rel="stylesheet">
@@ -50,7 +50,7 @@
 
                 <ul class="nav navbar-nav navbarHeader">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Branche</a></li>
+                    <li><a href="#branche">Branche</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Downloads</a></li>
                     <li><a href="#">Kontakt</a></li>
@@ -97,26 +97,111 @@
         </a>
     </div>
 
-        <!-- Hendy Content/Sparten -->
-        <div class="section">
-            <table>
-                <tr>
-                    <td><img src="assets/images/1.jpg" onclick="loadContent('Testfile')" alt="Angestellter" style="width:500px;height: 400px;px;"><p>Angestellter</p></td>
-                    <td><img src="assets/images/2.jpg" alt="Selbstständiger" style="width:500px;height:400px;"><p>Selbstständiger</p></td>
-                </tr>
-                <tr>
-                    <td><img src="assets/images/3.jpg" alt="Unternehmer" style="width:500px;height:400px;"><p>Unternehmer</p></td>
-                    <td><img src="assets/images/4.jpg" alt="Investor" style="width:500px;height:400px;"><p>Investor</p></td>
-                </tr>
-                <tr>
-                    <td><img src="assets/images/5.jpg" alt="Student" style="width:500px;height:400px;"><p>Student</p></td>
-                    <td><img src="assets/images/6.jpg" alt="Auszubildender" style="width:500px;height:400px;"><p>Auszubildender</p></td>
-                </tr>
-            </table>
+        <!-- Sparten -->
+        <div id="branche" class="section" style="padding-bottom: 0;">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/images/Angestellter.jpg" alt="Angestellt" onclick="loadContent('Testfile')" style="width:100%">
+                        <div class="caption">
+                            <p>Angestellt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                            <img src="assets/images/Selbstständiger.jpg" onclick="loadContent('Testfile')"alt="Selbständig" style="width:100%">
+                            <div class="caption">
+                                <p>Selbständig</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/images/Entrepreneur.jpg" alt="Unternehmer" onclick="loadContent('Testfile')" style="width:100%">
+                        <div class="caption">
+                            <p>Unternehmer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/images/Investor.jpg" onclick="loadContent('Testfile')"alt="Investor" style="width:100%">
+                        <div class="caption">
+                            <p>Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/images/Student.jpg" alt="Student" onclick="loadContent('Testfile')" style="width:100%">
+                        <div class="caption">
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/images/Auszubildener.jpg" onclick="loadContent('Testfile')"alt="Auszubildener" style="width:100%">
+                        <div class="caption">
+                            <p>Auszubildener</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <!-- Lukas Content/Kontaktform -->
-        <div id="varContent" class="section">
-            <p>Test</p>
+        <!-- Variable Content -->
+        <div id="varContent" class="collapse">
+        </div>
+
+        <!-- Kontaktformular -->
+        <div class="section" style="padding-top: 0; padding-bottom: 0;">
+
+            <form class="formular">
+                <div class="card-panel white">
+                    <div class="card-content blue-text">
+                        <span class="card-title black-text">Kontakt</span>
+                        <div class="row" style="margin-top: 5px;">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">contact_phone</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Telefonnummer</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">contact_mail</i>
+                                <input id="icon_prefix" type="email" class="validate">
+                                <label for="icon_prefix">E-Mail</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <a class="waves-effect waves-light btn">Absenden</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="section footer">
+            <ul class="footerContent">
+
+            </ul>
         </div>
 
     </div>
@@ -125,11 +210,11 @@
 
     <!-- External JavaScript -->
     <script type="text/javascript" src="assets/js/Jquery/jquery-3.2.1.min.js"></script>
-    <!--<script type="text/javascript" src="assets/js/Materialize/materialize.min.js"></script>-->
     <script type="text/javascript" src="assets/js/Bootstrap/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="assets/js/Materialize/materialize.min.js"></script>
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="resources/js/PageLoader.js"></script>
+    <script type="text/javascript" src="resources/js/Smoothscroll.js"></script>
 
 </body>
 </html>
