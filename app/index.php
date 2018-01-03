@@ -161,6 +161,7 @@
         </div>
         <!-- Variable Content -->
         <div id="varContent" class="collapse">
+
         </div>
 
         <!-- Kontaktformular -->
