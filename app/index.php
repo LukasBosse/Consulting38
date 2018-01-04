@@ -23,10 +23,15 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Local Stylesheets -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
 
-    <!-- External Stylesheets -->
+    <!-- Remote Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Local Stylesheets -->
+    <!-- External Stylesheets -->
     <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="assets/css/Materialize/materialIcons.css">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -53,7 +58,7 @@
                     <li><a href="#branche">Branche</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Downloads</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                     <li><a href="#">Impressum</a></li>
                 </ul>
 
@@ -104,7 +109,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <img src="assets/images/Angestellter.jpg" alt="Angestellt" onclick="loadContent('Testfile')" style="width:100%">
-                        <div class="caption">
+                        <div class="caption" style="height: 35px;">
                             <p>Angestellt</p>
                         </div>
                     </div>
@@ -112,7 +117,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                             <img src="assets/images/Selbstständiger.jpg" onclick="loadContent('Testfile')"alt="Selbständig" style="width:100%">
-                            <div class="caption">
+                            <div class="caption" style="height: 35px;">
                                 <p>Selbständig</p>
                             </div>
                     </div>
@@ -123,7 +128,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <img src="assets/images/Entrepreneur.jpg" alt="Unternehmer" onclick="loadContent('Testfile')" style="width:100%">
-                        <div class="caption">
+                        <div class="caption" style="height: 35px;">
                             <p>Unternehmer</p>
                         </div>
                     </div>
@@ -131,7 +136,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <img src="assets/images/Investor.jpg" onclick="loadContent('Testfile')"alt="Investor" style="width:100%">
-                        <div class="caption">
+                        <div class="caption" style="height: 35px;">
                             <p>Investor</p>
                         </div>
                     </div>
@@ -142,7 +147,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <img src="assets/images/Student.jpg" alt="Student" onclick="loadContent('Testfile')" style="width:100%">
-                        <div class="caption">
+                        <div class="caption" style="height: 35px;">
                             <p>Student</p>
                         </div>
                     </div>
@@ -150,7 +155,7 @@
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <img src="assets/images/Auszubildener.jpg" onclick="loadContent('Testfile')"alt="Auszubildener" style="width:100%">
-                        <div class="caption">
+                        <div class="caption" style="height: 35px;">
                             <p>Auszubildener</p>
                         </div>
                     </div>
@@ -164,13 +169,68 @@
 
         </div>
 
+        <!-- Team Section -->
+        <div class="section">
+                <div class="team card-panel white">
+                    <div class="card-content" style="color: #0548FF;">
+                        <span class="card-title"><b>Das Team</b></span>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class=col-sm-3 col-md-3" align="center">
+                                <div class="card teamItem">
+                                    <div class="card-image">
+                                        <img src="https://portal.uni-freiburg.de/husserlarchiv/personen-en/resolveuid/5e079a2a5a596a5a22e15e36d4ef8c04" width="200" height="200">
+                                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">assignment_ind</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p style="text-align: left;">Henning Vietzke</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3" align="center">
+                                <div class="card teamItem">
+                                    <div class="card-image">
+                                        <img src="https://portal.uni-freiburg.de/husserlarchiv/personen-en/resolveuid/5e079a2a5a596a5a22e15e36d4ef8c04" width="200" height="200">
+                                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">assignment_ind</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p style="text-align: left;">Felix Knof</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3" align="center">
+                                <div class="card teamItem">
+                                    <div class="card-image">
+                                        <img src="https://portal.uni-freiburg.de/husserlarchiv/personen-en/resolveuid/5e079a2a5a596a5a22e15e36d4ef8c04" width="200" height="200">
+                                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">assignment_ind</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p style="text-align: left;">Marcel Schomburg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3" align="center">
+                                <div class="card teamItem">
+                                    <div class="card-image">
+                                        <img src="https://portal.uni-freiburg.de/husserlarchiv/personen-en/resolveuid/5e079a2a5a596a5a22e15e36d4ef8c04" width="200" height="200">
+                                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">assignment_ind</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p style="text-align: left;">Hendrik Schulze</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
         <!-- Kontaktformular -->
-        <div class="section" style="padding-top: 0; padding-bottom: 0;">
+        <div id="kontakt" class="section" style="padding-top: 0; padding-bottom: 0;">
 
             <form class="formular">
                 <div class="card-panel white">
                     <div class="card-content blue-text">
-                        <span class="card-title black-text">Kontakt</span>
+                        <span class="card-title" style="color: #0548FF;"><b>Kontakt</b></span>
                         <div class="row" style="margin-top: 5px;">
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>

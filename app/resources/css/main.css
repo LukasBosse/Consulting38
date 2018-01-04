@@ -35,14 +35,31 @@ body {
     height: 100vh !important;
 }
 
+.teamItem {
+    height: 250px;
+    width: 200px;
+}
+
+.team {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    border-radius: 2px;
+    background-color: white !important;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
 .section {
-    color: #5a5a5a;
+    color: #0548FF;
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
 }
 
 .section p {
     padding-left: 5px;
+    color: #0548FF !important;
 }
 
 .customerContent {
