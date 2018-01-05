@@ -100,6 +100,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
+
     </div>
 
         <!-- Sparten -->
@@ -173,7 +174,7 @@
         <div class="section">
                 <div class="team card-panel white">
                     <div class="card-content" style="color: #0548FF;">
-                        <span class="card-title"><b>Das Team</b></span>
+                        <span class="card-title section-title"><b>Das Team</b></span>
                         <div class="row" style="padding-top: 5px;">
                             <div class=col-sm-3 col-md-3" align="center">
                                 <div class="card teamItem">
@@ -230,7 +231,7 @@
             <form class="formular">
                 <div class="card-panel white">
                     <div class="card-content blue-text">
-                        <span class="card-title" style="color: #0548FF;"><b>Kontakt</b></span>
+                        <span class="card-title section-title"><b>Kontakt</b></span>
                         <div class="row" style="margin-top: 5px;">
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>
@@ -260,9 +261,22 @@
         </div>
 
         <div class="section footer">
-            <ul class="footerContent">
-
-            </ul>
+            <div class="container-fluid">
+                <div class="col-xs-12 col-md-6">
+                    <p>Copyright &copy; <?php echo date("Y"); ?>  FinanzFreunde38 - All rights reserved.</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <ul class="pull-right">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#kontakt"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <div style="clear: both"></div>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </div>
