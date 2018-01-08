@@ -58,7 +58,7 @@
     <div class="menu">
         <hr>
         <ul class="navbarHeader">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="?view=index">Home</a></li>
             <li><a href="?view=index#branche">Branche</a></li>
             <li><a href="?view=index#team">Team</a></li>
             <li><a href="#">Archiv</a></li>

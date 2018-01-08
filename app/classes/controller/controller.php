@@ -35,6 +35,10 @@ class Controller{
                 $this->view->setTemplate('index');
                 break;
             }
+            case 'team': {
+                $this->view->setTemplate('team');
+                break;
+            }
         }
         $this->view->assign('blog_title', 'Der Titel des Blogs');
         $this->view->assign('blog_footer', 'Ein Blog von und mit MVC');

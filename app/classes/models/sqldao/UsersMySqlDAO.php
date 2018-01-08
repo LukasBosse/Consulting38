@@ -10,7 +10,18 @@ include_once('config.php');
      */
 
     class UsersMySqlDAO  {
-        
+
+        public function insertUser($user) {
+            $sql = 'Insert INTO kunden (Vorname, Nachname, Username, Phone, Mail) VALUES (?,?,?,?,?)';
+            $sqlQuery = new SqlQuery($sql);
+            $sqlQuery->set($user->vorname);
+            $sqlQuery->set($user->nachname);
+            $sqlQuery->set($user->username);
+            $sqlQuery->set($user->phone);
+            $sqlQuery->set($user->mail);
+            return $this->executeUpdate($sqlQuery);
+        }
+
         /**
          * Get all Users
          * @return Users with idUsers, username, email

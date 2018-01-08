@@ -1,5 +1,6 @@
 <?php
-class View{
+
+class View {
 
     // Pfad zum Template
     private $path = 'templates';
@@ -22,7 +23,6 @@ class View{
         $this->_[$key] = $value;
     }
 
-
     /**
      * Setzt den Namen des Templates.
      *
@@ -31,7 +31,6 @@ class View{
     public function setTemplate($template = 'index'){
         $this->template = $template;
     }
-
 
     /**
      * Das Template-File laden und zurückgeben
