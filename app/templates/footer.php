@@ -28,6 +28,8 @@
 <script type="text/javascript" src="resources/js/PageLoader.js"></script>
 <script type="text/javascript" src="resources/js/Smoothscroll.js"></script>
 <script type="text/javascript" src="resources/js/Popover.js"></script>
+<script type="text/javascript" src="resources/js/DatePicker.js"></script>
+
 
 </body>
 </html>

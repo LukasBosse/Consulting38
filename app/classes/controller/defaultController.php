@@ -13,6 +13,7 @@ if (isset($_POST['contactSubmit'])) {
     $newContact->username = $newContact->vorname . $newContact->nachname;
     $newContact->phone = $_POST['phone'];
     $newContact->mail = $_POST['mail'];
+    $newContact->birthdate = $_POST['birthdate'];
 
     $result = DAOFactory::getUsersDAO()->insertUser($newContact);
 

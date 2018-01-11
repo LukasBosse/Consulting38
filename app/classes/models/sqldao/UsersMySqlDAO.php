@@ -12,13 +12,14 @@ include_once('config.php');
     class UsersMySqlDAO  {
 
         public function insertUser($user) {
-            $sql = 'Insert INTO kunden (Vorname, Nachname, Username, Phone, Mail) VALUES (?,?,?,?,?)';
+            $sql = 'Insert INTO kunden (Vorname, Nachname, Username, Phone, Mail, Birthdate) VALUES (?,?,?,?,?,?)';
             $sqlQuery = new SqlQuery($sql);
             $sqlQuery->set($user->vorname);
             $sqlQuery->set($user->nachname);
             $sqlQuery->set($user->username);
             $sqlQuery->set($user->phone);
             $sqlQuery->set($user->mail);
+            $sqlQuery->set($user->birthdate);
             return $this->executeUpdate($sqlQuery);
         }
 
@@ -70,7 +71,7 @@ include_once('config.php');
          * @return affected rows
          */
         public function update($user){
-            $sql = 'UPDATE kunden SET vorname = ?, nachname = ?, username = ?, phone = ?, mail = ? WHERE ID = ?';
+            $sql = 'UPDATE kunden SET Vorname = ?, Nachname = ?, Username = ?, Phone = ?, Mail = ?, Birthdate = ?  WHERE ID = ?';
             $sqlQuery = new SqlQuery($sql);
 
             $sqlQuery->set($user->vorname);
@@ -78,6 +79,7 @@ include_once('config.php');
             $sqlQuery->set($user->username);
             $sqlQuery->set($user->phone);
             $sqlQuery->set($user->mail);
+            $sqlQuery->set($user->birthdate);
 
             $sqlQuery->setNumber($user->id);
             return $this->executeUpdate($sqlQuery);
@@ -120,6 +122,8 @@ include_once('config.php');
             if(isset($row['Nachname'])) { $user->nachname = $row['Nachname']; }
             if(isset($row['Phone'])) { $user->phone = $row['Phone']; }
             if(isset($row['Mail'])) { $user->mail = $row['Mail']; }
+            if(isset($row['Birthdate'])) { $user->birthdate = $row['Birthdate']; }
+
 
             return $user;
         }

@@ -13,6 +13,7 @@
         var $username;
         var $phone;
         var $mail;
+        var $birthdate;
     }
 
 ?>
