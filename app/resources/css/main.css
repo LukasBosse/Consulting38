@@ -113,6 +113,7 @@ body {
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    padding-bottom: 10px;
 }
 
 .strike > span {

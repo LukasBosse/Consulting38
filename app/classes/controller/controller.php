@@ -1,4 +1,5 @@
 <?php
+
 class Controller{
 
     private $request = null;
@@ -30,11 +31,6 @@ class Controller{
                 $this->view->setTemplate('impressum');
                 break;
             }
-            case 'default': {
-                include('defaultController.php');
-                $this->view->setTemplate('index');
-                break;
-            }
             case 'team': {
                 $this->view->setTemplate('team');
                 break;
@@ -42,6 +38,14 @@ class Controller{
             case 'angestellter': {
                 $this->view->setTemplate('angestellter');
                 break;
+            }
+            case 'archiv': {
+                $this->view->setTemplate('archiv');
+                break;
+            }
+            case 'default': {
+                include('defaultController.php');
+                $this->view->setTemplate('index');
             }
         }
         $this->view->assign('blog_title', 'Der Titel des Blogs');

@@ -32,6 +32,10 @@ class View {
         $this->template = $template;
     }
 
+    public function getTemplate() {
+        return $this->template;
+    }
+
     /**
      * Das Template-File laden und zurückgeben
      *
@@ -41,6 +45,7 @@ class View {
     public function loadTemplate(){
         $tpl = $this->template;
         // Pfad zum Template erstellen & überprüfen ob das Template existiert.
+        $headerFile = $this->path . DIRECTORY_SEPARATOR . 'header.php';
         $file = $this->path . DIRECTORY_SEPARATOR . $tpl . '.php';
         $footerFile = $this->path . DIRECTORY_SEPARATOR . 'footer.php';
         $exists = file_exists($file);
@@ -52,6 +57,7 @@ class View {
 
             // Das Template-File wird eingebunden und dessen Ausgabe in
             // $output gespeichert.
+            include $headerFile;
             include $file;
             include $footerFile;
             $output = ob_get_contents();
@@ -66,4 +72,3 @@ class View {
         }
     }
 }
-?>
